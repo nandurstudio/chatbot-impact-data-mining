@@ -7,6 +7,8 @@ Proyek Akhir Praktikum Data Mining 2026 — Universitas Pelita Bangsa.
 * **NIM**: 312310233
 * **Jurusan**: Teknik Informatika (Kelas I232A)
 * **Peran**: Mahasiswa
+* **Repository GitHub**: [nandurstudio/chatbot-impact-data-mining](https://github.com/nandurstudio/chatbot-impact-data-mining)
+* **Link Streamlit (Go-Live)**: [chatbot-impact.streamlit.app](https://chatbot-impact.streamlit.app/)
 
 Aplikasi ini merupakan dashboard interaktif berbasis **Streamlit** untuk mengevaluasi dampak penggunaan chatbot percakapan (*conversational chatbots*) terhadap proses pembelajaran mahasiswa universitas.
 
