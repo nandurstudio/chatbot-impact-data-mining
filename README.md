@@ -37,22 +37,26 @@ Dataset yang dianalisis didasarkan pada penelitian Jocelyn C. Dumlao (2024), *"2
 
 ```text
 chatbot-impact-data-mining/
-├── app.py                     # Main orchestrator & routing tab
-├── requirements.txt           # File dependensi pustaka python
+├── app.py                     # Main orchestrator & routing tab Streamlit
+├── requirements.txt           # File dependensi pustaka Python
 ├── .gitignore                 # Daftar file/folder yang diabaikan Git
-├── README.md                  # Dokumentasi proyek
-├── AI_Chatbots_Students_Attitude_Dataset_EN.csv  # Dataset utama
+├── README.md                  # Dokumentasi proyek & identitas di GitHub
+├── project_summary.json       # Log metrik teknis proyek (auto-generated)
+├── final_report_2026.html     # Draf laporan utama proyek
+├── final_audit_report_2026.html # Dokumen audit kepatuhan & kelengkapan proyek
+├── AI_Chatbots_Students_Attitude_Dataset_EN.csv  # Dataset utama survei
+├── POSTER Praktikum Nandang Duryat I232A Data Mining.png # Poster final proyek
 ├── utils/
-│   └── data_loader.py         # Utility untuk memproses file CSV
+│   └── data_loader.py         # Utility untuk memproses file CSV & DateTime
 ├── components/
-│   ├── styles.py              # Injeksi CSS & styling visual premium
+│   ├── styles.py              # Injeksi CSS & styling visual (Dark/Light mode)
 │   └── chatbot_logic.py       # Kumpulan logika respon 21 chatbot
 └── tabs/
-    ├── overview.py            # Render Tab 1 (Overview)
-    ├── preview.py             # Render Tab 2 (Pratinjau Data)
-    ├── eda.py                 # Render Tab 3 (Grafik EDA)
-    ├── nlp.py                 # Render Tab 4 (Sentimen & Topic Modeling)
-    └── chatbots.py            # Render Tab 5 (Playground Chatbot)
+    ├── overview.py            # Render Tab Overview & Identitas Mahasiswa
+    ├── preview.py             # Render Tab Preview Data Tabular & Skema Kolom
+    ├── eda.py                 # Render Tab Grafik Visualisasi EDA
+    ├── nlp.py                 # Render Tab Analisis Sentimen & Topic Modeling LDA
+    └── chatbots.py            # Render Tab Playground Interaksi 21 Chatbot
 ```
 
 ---
