@@ -67,6 +67,24 @@
             border-top: 1px solid #E2E8F0;
             padding-top: 20px;
         }
+        .meta-box {
+            background-color: #F7FAFC;
+            border-left: 5px solid #2B6CB0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .meta-item {
+            font-size: 0.95rem;
+        }
+        .meta-item strong {
+            color: #4A5568;
+        }
         @media print {
             body {
                 padding: 0;
@@ -82,6 +100,18 @@
 
     <h1>Audit Akhir & Kepatuhan Proyek</h1>
     <div class="subtitle">Praktikum Data Mining 2026 — Universitas Pelita Bangsa</div>
+
+    <div class="meta-box">
+        <h3 style="margin-top: 0; color: #2B6CB0;">👤 Identitas Mahasiswa & Tautan Proyek</h3>
+        <div class="meta-grid">
+            <div class="meta-item"><strong>Nama Mahasiswa:</strong> NANDANG DURYAT</div>
+            <div class="meta-item"><strong>NIM:</strong> 312310233</div>
+            <div class="meta-item"><strong>Kelas / Program Studi:</strong> I232A / Teknik Informatika</div>
+            <div class="meta-item"><strong>Mata Kuliah:</strong> Praktikum Data Mining 2026</div>
+            <div class="meta-item"><strong>Repository GitHub:</strong> <a href="https://github.com/nandurstudio/chatbot-impact-data-mining" target="_blank">github.com/nandurstudio/chatbot-impact-data-mining</a></div>
+            <div class="meta-item"><strong>Aplikasi Online:</strong> <a href="https://chatbot-impact.streamlit.app/" target="_blank">chatbot-impact.streamlit.app</a></div>
+        </div>
+    </div>
 
     <h2>🔍 Checklist Kesiapan & Kepatuhan Rubrik</h2>
     <table>
@@ -138,6 +168,31 @@
             </tr>
         </tbody>
     </table>
+
+    <h2>📂 Struktur Direktori & Berkas Proyek</h2>
+    <pre style="background-color: #F7FAFC; padding: 20px; border-radius: 8px; border: 1px solid #E2E8F0; font-family: 'Courier New', Courier, monospace; font-size: 0.9rem; line-height: 1.4; color: #2D3748; overflow-x: auto;">
+chatbot-impact-data-mining/
+├── app.py                     # Main orchestrator & routing tab Streamlit
+├── requirements.txt           # Dependensi pustaka Python (pandas, streamlit, scikit-learn, dll)
+├── .gitignore                 # Daftar berkas/direktori yang diabaikan oleh Git
+├── README.md                  # Dokumentasi proyek & identitas di GitHub
+├── project_summary.json       # Log metrik teknis proyek (auto-generated)
+├── final_report_2026.html     # Draf laporan utama proyek
+├── final_audit_report_2026.html # Dokumen audit kepatuhan & kelengkapan ini
+├── AI_Chatbots_Students_Attitude_Dataset_EN.csv  # Dataset utama survei
+├── POSTER Praktikum Nandang Duryat I232A Data Mining.png # Poster final proyek
+├── utils/
+│   └── data_loader.py         # Modul utility pemrosesan CSV & DateTime
+├── components/
+│   ├── styles.py              # Injeksi visual CSS & adaptasi Dark/Light theme
+│   └── chatbot_logic.py       # Logika respon simulasi dari 21 tipe chatbot
+└── tabs/
+    ├── overview.py            # Render Tab Overview & Identitas Mahasiswa
+    ├── preview.py             # Render Tab Preview Data Tabular & Skema Kolom
+    ├── eda.py                 # Render Tab Grafik Visualisasi EDA
+    ├── nlp.py                 # Render Tab Analisis Sentimen & Pemodelan Topik LDA
+    └── chatbots.py            # Render Tab Playground Interaksi 21 Chatbot
+    </pre>
 
     <h2>📝 Rancangan Draf Praktikum (PDF)</h2>
     
