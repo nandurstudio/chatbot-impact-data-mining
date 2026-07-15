@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Akhir & Kepatuhan Proyek - 2026</title>
+    <style>
+        body {
+            font-family: 'Outfit', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2D3748;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #FFFFFF;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #1A202C;
+            text-align: center;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: #2B6CB0;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        h3 {
+            font-size: 1.15rem;
+            color: #2D3748;
+            margin-top: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #718096;
+            margin-bottom: 40px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #E2E8F0;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #EDF2F7;
+            color: #2D3748;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.85rem;
+            color: #A0AEC0;
+            border-top: 1px solid #E2E8F0;
+            padding-top: 20px;
+        }
+        @media print {
+            body {
+                padding: 0;
+                background-color: #FFF;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Audit Akhir & Kepatuhan Proyek</h1>
+    <div class="subtitle">Praktikum Data Mining 2026 — Universitas Pelita Bangsa</div>
+
+    <h2>🔍 Checklist Kesiapan & Kepatuhan Rubrik</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Kriteria Tugas</th>
+                <th>Ketentuan Rubrik</th>
+                <th>Status Proyek Anda</th>
+                <th>Catatan Audit / Rekomendasi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Tahun Pelaksanaan</strong></td>
+                <td>Praktikum Data Mining 2026</td>
+                <td>Sesuai (2026) ✅</td>
+                <td>Telah dikonfigurasi tetap pada tahun 2026 sesuai preferensi Anda.</td>
+            </tr>
+            <tr>
+                <td><strong>Identitas Mahasiswa</strong></td>
+                <td>Nama, NIM, Kelas TI</td>
+                <td>Terpasang Lengkap ✅</td>
+                <td>Menampilkan NANDANG DURYAT (NIM: 312310233) Kelas I232A di Overview & README.</td>
+            </tr>
+            <tr>
+                <td><strong>Format Pengumpulan</strong></td>
+                <td>Kode Program (ZIP & GitHub)</td>
+                <td>Siap & Live ✅</td>
+                <td>Repository GitHub dan berkas ZIP proyek telah terunggah dengan rapi.</td>
+            </tr>
+            <tr>
+                <td><strong>Aplikasi Online</strong></td>
+                <td>Live URL</td>
+                <td>Live ✅</td>
+                <td>Terdeploy secara publik di chatbot-impact.streamlit.app.</td>
+            </tr>
+            <tr>
+                <td><strong>Fitur Streamlit</strong></td>
+                <td>Upload Dataset (.csv)</td>
+                <td>Siap ✅</td>
+                <td>Tersedia uploader dinamis serta preload dataset otomatis saat startup.</td>
+            </tr>
+            <tr>
+                <td><strong>Algoritma Mining</strong></td>
+                <td>Regresi / Naive Bayes / K-NN / Decision Tree / K-Means</td>
+                <td>Implementasi NLP & LDA ✅</td>
+                <td>Menggunakan model Latent Dirichlet Allocation (LDA) untuk clustering bahasan topik teks, serta TextBlob untuk sentimen.</td>
+            </tr>
+            <tr>
+                <td><strong>Visualisasi Hasil</strong></td>
+                <td>Grafik / Metrik Evaluasi</td>
+                <td>Sangat Lengkap ✅</td>
+                <td>Menampilkan Heatmap Korelasi, Stacked Bar Chart, Histogram Sentimen, WordCloud, dan Grafik Klaster Topik LDA.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>📝 Rancangan Draf Praktikum (PDF)</h2>
+    
+    <h3>Bab I: Pendahuluan</h3>
+    <ul>
+        <li><strong>Latar Belakang:</strong> Evaluasi efektivitas penggunaan chatbot percakapan (conversational chatbots) terhadap sikap dan efektivitas pembelajaran mahasiswa di universitas.</li>
+        <li><strong>Tujuan:</strong> Mengklasifikasikan pola sentimen tanggapan teks responden serta mengelompokkan topik bahasan utama menggunakan LDA.</li>
+    </ul>
+
+    <h3>Bab II: Tinjauan Pustaka</h3>
+    <ul>
+        <li><strong>Data Mining & Text Mining:</strong> Proses ekstraksi pola berguna dari data teks kualitatif responden.</li>
+        <li><strong>Sentiment Analysis:</strong> Perhitungan polaritas emosi responden (skor -1.0 s.d +1.0) menggunakan pustaka <code>TextBlob</code>.</li>
+        <li><strong>Latent Dirichlet Allocation (LDA):</strong> Algoritma clustering topik tak terawasi (unsupervised) untuk memilah tema bahasan teks.</li>
+    </ul>
+
+    <h3>Bab III: Implementasi & Preprocessing</h3>
+    <ul>
+        <li><strong>Pembersihan Data:</strong> Penanganan nilai kosong (NaN/Null) pada respon teks.</li>
+        <li><strong>Tokenization:</strong> Proses pemecahan teks menjadi token menggunakan <code>CountVectorizer</code> dengan stop words standar bahasa Inggris.</li>
+        <li><strong>Pemodelan:</strong> Fitting model LDA untuk menghasilkan 5 klaster topik utama dari respon survei mahasiswa.</li>
+    </ul>
+
+    <h3>Bab IV: Hasil & Pembahasan</h3>
+    <ul>
+        <li><strong>Demografi:</strong> Responden didominasi mahasiswa tingkat Sarjana (Bachelor) dengan tingkat interaksi mingguan tinggi.</li>
+        <li><strong>Sentimen:</strong> Distribusi sentimen menunjukkan kecenderungan positif yang sangat dominan terhadap chatbot AI.</li>
+        <li><strong>LDA Topics:</strong> Dihasilkan 5 topik dominan mengenai bantuan pengerjaan tugas, efisiensi waktu, serta akurasi jawaban chatbot.</li>
+    </ul>
+
+    <h2>🎨 Panduan Poster Proyek (PDF/PNG)</h2>
+    <ul>
+        <li><strong>Header:</strong> Judul proyek, Nama mahasiswa (NANDANG DURYAT), NIM (312310233), Kelas (I232A).</li>
+        <li><strong>Seksi Metodologi:</strong> Penjelasan dataset (131 Responden) dan alur preprocessing.</li>
+        <li><strong>Seksi Hasil & Visualisasi:</strong> Screenshot grafik WordCloud, distribusi sentimen, dan grafik bobot kata LDA dari dashboard Streamlit Anda.</li>
+        <li><strong>Seksi Tautan & QR Code:</strong> QR Code yang mengarah ke link deploy online chatbot-impact.streamlit.app.</li>
+    </ul>
+
+    <div class="footer">
+        © 2026 Teknik Informatika - Universitas Pelita Bangsa
+    </div>
+
+</body>
+</html>
