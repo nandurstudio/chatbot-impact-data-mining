@@ -20,7 +20,8 @@ def inject_custom_css():
         
         .sub-title {
             font-size: 1.15rem;
-            color: #718096;
+            color: var(--text-color);
+            opacity: 0.7;
             margin-bottom: 2rem;
             font-weight: 400;
         }
@@ -28,18 +29,19 @@ def inject_custom_css():
         .section-header {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #1A202C;
+            color: var(--text-color);
             margin-top: 1.5rem;
             margin-bottom: 1rem;
-            border-bottom: 2px solid #E2E8F0;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.2);
             padding-bottom: 0.3rem;
         }
         
         .metric-card {
-            background: #F7FAFC;
+            background: var(--secondary-background-color);
+            color: var(--text-color);
             border-radius: 12px;
             padding: 1.25rem;
-            border: 1px solid #E2E8F0;
+            border: 1px solid rgba(128, 128, 128, 0.2);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
             text-align: center;
             transition: all 0.3s ease;
@@ -59,19 +61,20 @@ def inject_custom_css():
         
         .metric-label {
             font-size: 0.85rem;
-            color: #718096;
+            color: var(--text-color);
+            opacity: 0.8;
             margin-top: 0.25rem;
             font-weight: 500;
         }
         
         .chat-bubble {
-            background: #EDF2F7;
+            background: var(--secondary-background-color);
             border-radius: 15px;
             padding: 1rem 1.5rem;
             margin-top: 1rem;
             border-left: 5px solid #007FFF;
             font-size: 1.05rem;
-            color: #2D3748;
+            color: var(--text-color);
         }
         </style>
     """, unsafe_allow_html=True)

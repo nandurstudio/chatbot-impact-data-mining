@@ -24,17 +24,14 @@ def render_overview_tab(df):
         """)
         
     with col2:
-        st.markdown("""
-        <div class="metric-card" style="text-align: left; background: #EDF2F7; border-left: 5px solid #8B0082;">
-            <h4 style="margin: 0; color: #1A202C;">👤 Identitas Mahasiswa</h4>
-            <hr style="margin: 8px 0; border-color: rgba(0,0,0,0.1);">
-            <p style="margin: 4px 0; font-size: 0.95rem;"><b>Nama:</b> NANDANG DURYAT</p>
-            <p style="margin: 4px 0; font-size: 0.95rem;"><b>NIM:</b> 312310233</p>
-            <p style="margin: 4px 0; font-size: 0.95rem;"><b>Jurusan:</b> Teknik Informatika (I232A)</p>
-            <p style="margin: 4px 0; font-size: 0.95rem;"><b>Status:</b> Mahasiswa</p>
-        </div>
-        """, unsafe_allow_html=True)
-        st.write("")
+        with st.container(border=True):
+            st.markdown("### 👤 Identitas Mahasiswa")
+            st.markdown("""
+            * **Nama**: NANDANG DURYAT
+            * **NIM**: 312310233
+            * **Jurusan**: Teknik Informatika (I232A)
+            * **Status**: Mahasiswa
+            """)
         st.info("""
         💡 **Panduan Memulai:**
         Dataset otomatis dimuat dari direktori project. Anda juga bisa mengunggah file dataset baru (.csv) melalui menu di panel samping kiri.

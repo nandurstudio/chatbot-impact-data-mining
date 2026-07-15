@@ -1,0 +1,35 @@
+{
+  "project_name": "Evaluasi Dampak 21 Chatbots pada Pembelajaran Mahasiswa",
+  "dataset_info": {
+    "filename": "AI_Chatbots_Students_Attitude_Dataset_EN.csv",
+    "total_rows": 131,
+    "total_columns": 34,
+    "target_variable": "Q5.1 (Attitude toward AI) / Q10 (Qualitative Response)"
+  },
+  "preprocessing_steps": [
+    "Pembersihan string kosong (fillna)",
+    "Konversi tipe data Timestamp ke Datetime",
+    "Ekstraksi panjang karakter dari respon teks kualitatif"
+  ],
+  "model_used": [
+    {
+      "name": "Latent Dirichlet Allocation (LDA)",
+      "library": "scikit-learn"
+    },
+    {
+      "name": "Sentiment Polarity Analyzer",
+      "library": "TextBlob"
+    }
+  ],
+  "evaluation_metrics": {
+    "topic_modeling": "Ekstraksi 5 klaster topik menggunakan CountVectorizer & LDA",
+    "sentiment_analysis": "Skor polaritas rata-rata (-1.0 s.d 1.0) untuk mendeteksi emosi responden"
+  },
+  "streamlit_features": [
+    "File Uploader dinamis untuk konfigurasi csv",
+    "Preview Data Tabular & Analisis tipe data kolom",
+    "Grafik EDA Interaktif (Heatmap, Stacked Bar, dan Histogram)",
+    "Visualisasi NLP (Sentiment Histogram, Word Cloud, dan Topic Word Weights)",
+    "Interactive Playground untuk simulasi logika 21 Chatbot"
+  ]
+}
